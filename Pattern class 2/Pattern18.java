@@ -12,7 +12,7 @@ public class Pattern18 {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-	    int row = 5;//scn.nextInt();
+	    int row = scn.nextInt();
 	    int nspace = 0, nstar = row;
 	    for(int i = 1; i<=row; i++){
 	        for(int j =1; j<=nspace; j++){
