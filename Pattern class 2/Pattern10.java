@@ -1,4 +1,4 @@
-// Pattern 10 Nados
+// Pattern 10 Nados n = 5
 //		*	
 //	*		*	
 //*				*	
