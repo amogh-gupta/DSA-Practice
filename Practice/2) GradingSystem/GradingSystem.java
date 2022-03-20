@@ -10,10 +10,10 @@ public class GradingSystem {
         int c = scn.nextInt();
 
         // Logic
-        if(a>b && a>c){
+        if(a>b && a>c){ // if false means either a falls in b/w b and c or a is smaller than b and c
             System.out.println("Greatest Number is: " + a);
         }
-        else if(b>c){
+        else if(b>c){ // if false means c is greatest among all
             System.out.println("Greatest Number is: " + b);
         }
         else{
