@@ -24,6 +24,9 @@ public class RotateAnArray {
             arr[i] = scn.nextInt();
         }
         int rotation = scn.nextInt();
+        if (rotation<0){
+            rotation += len;
+        }
         ArrayRotation(arr, len-rotation, len-1);
         ArrayRotation(arr, 0, len-rotation-1);
         ArrayRotation(arr, 0, len-1);
