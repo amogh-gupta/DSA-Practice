@@ -1,3 +1,4 @@
+// Question URL: https://nados.io/question/digit-frequency
 import java.util.Scanner;
 public class DigitFrequency {
     public static int digitFrequency(int num1, int num2){
