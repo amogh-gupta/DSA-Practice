@@ -59,6 +59,7 @@ public class DifferenceOfTwoArrays {
         if(ret[0] == 0){
             start = 1;
         }
+        
         display(ret, start);        
     }
 }
