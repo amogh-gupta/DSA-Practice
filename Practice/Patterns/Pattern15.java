@@ -1,6 +1,6 @@
-// Question URL : https://nados.io/question/pattern-5
+// Question URL : https://nados.io/question/pattern-15
 import java.util.Scanner;
-public class Pattern5 {
+public class Pattern15 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int num = scn.nextInt();
