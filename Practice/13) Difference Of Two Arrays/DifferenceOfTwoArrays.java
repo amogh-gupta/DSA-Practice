@@ -1,3 +1,4 @@
+// Question URL : https://nados.io/question/difference-of-two-arrays
 import java.util.Scanner;
 import java.lang.Math;
 
