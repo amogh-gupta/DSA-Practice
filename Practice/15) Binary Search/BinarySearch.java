@@ -1,4 +1,4 @@
-// Question URL : https://nados.io/question/subarray-problem
+// BINARY SEARCH
 import java.util.Scanner;
 public class BinarySearch {
     public static int binarySearch(int arr[], int end, int srch) {
