@@ -1,4 +1,4 @@
-// Question URL : https://nados.io/question/subarray-problem
+// Question URL : https://nados.io/article/broken-economy
 import java.util.Scanner;
 public class BrokenEconomyAlternative {
     public static int binarySearch(int arr[], int end, int srch) {
