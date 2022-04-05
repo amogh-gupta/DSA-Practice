@@ -1,5 +1,4 @@
 // Question URL : https://leetcode.com/problems/guess-number-higher-or-lower/ 
-
 public class GuessNumberHigherorLower {
     public int guessNumber(int n) {
         int left = 1, right = n, mid;
