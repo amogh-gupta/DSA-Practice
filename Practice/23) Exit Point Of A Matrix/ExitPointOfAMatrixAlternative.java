@@ -9,7 +9,7 @@ public class ExitPointOfAMatrixAlternative {
         int[][] arr = new int[r][c];
         for(int i = 0; i<r; i++){
             for(int j = 0; j<c; j++){
-                arr[i][j] = scn.nextInt();
+                arr[i][j] = scn.nextInt(); 
             }
         }
         return arr;
