@@ -13,7 +13,7 @@ public class SaddlePriceShortestApproach{
     }
 
     public static void display(int[][] arr, int r) {
-        int val = 0, flag, min, c, flag1 = 0;
+        int val = 0, flag, min, c;
         for(int i = 0; i < r; i++){
             flag = 0;
             c = 0;
