@@ -1,7 +1,8 @@
 // Question URL : https://nados.io/question/ring-rotate
+import java.io.*;
 import java.util.*;
 
-public class RingRotate {
+public class Rotate {
 
     public static int[][] inputArr(int r, int c, Scanner scn){
         int[][] arr = new int[r][c];
@@ -14,15 +15,14 @@ public class RingRotate {
     }
 
     public static void ringRotate(int[][] arr, int r, int c, int s, int rotation) {
-        int[] singleArr = fill1d(arr, r, c, s) ;
+        Integer[] singleArr = fill1d(arr, r, c, s);
         rotate(singleArr, rotation);
         fill2d(arr, r, c, s, singleArr);
         display(arr);
     }
 
-    public static int[] fill1d(int[][] arr, int r, int c, int s) {
-        ArrayList<Integer> list = new ArrayList<Integer>();
-        // int[] a = new int[20];
+    public static Integer[] fill1d(int[][] arr, int r, int c, int s) {
+        ArrayList<Integer> list = new ArrayList<>();
         int rmin = s-1, rmax = r-s, cmin = s-1, cmax = c-s;
         for(int i = rmin; i<=rmax; i++){
             list.add(arr[i][cmin]);
@@ -36,29 +36,32 @@ public class RingRotate {
         for(int i = cmax-1; i>cmin; i--){
             list.add(arr[rmin][i]);
         }
-        int[] ar = new int[list.size()];
-        for(int i = 0; i<list.size(); i++){
-            ar[i] = list.get(i);
-        }
-        return ar;
+        // int[] ar = new int[list.size()];
+        // for(int i = 0; i<list.size(); i++){
+        //     ar[i] = list.get(i);
+        // }
+
+        // return ar;
 
         // OR
-
-        // return list.toArray(new int[list.size()]);
+        int n = list.size();
+        return list.toArray(new Integer[n]);
     }
 
-    public static void rotate(int[] arr, int rotation) {
+    public static void rotate(Integer[] arr, int rotation) {
         int len = arr.length;
-        rotation %= len;
+        rotation %= len; 
         if (rotation<0){
             rotation += len;
         }
         ArrayReverse(arr, len-rotation, len-1);
         ArrayReverse(arr, 0, len-rotation-1);
         ArrayReverse(arr, 0, len-1);
+
+        
     }
 
-    public static void fill2d(int[][] arr, int r, int c, int s, int[] ar) {
+    public static void fill2d(int[][] arr, int r, int c, int s, Integer[] ar) {
         int rmin = s-1, rmax = r-s, cmin = s-1, cmax = c-s, count = 0;
         for(int i = rmin; i<=rmax; i++){
             arr[i][cmin] = ar[count];
@@ -76,12 +79,10 @@ public class RingRotate {
             arr[rmin][i] = ar[count];
             count++;
         }
-        // return ar;
-
     }
 
-    public static void ArrayReverse(int[] a, int start, int end){
-        while(start < end){//} && start!=end){
+    public static void ArrayReverse(Integer[] a, int start, int end){
+        while(start < end){
             int temp = a[start];
             a[start] = a[end];
             a[end] = temp;
@@ -106,8 +107,8 @@ public class RingRotate {
         int[][] arr = inputArr(r,c,scn);
         int s = scn.nextInt();
         int rotation = scn.nextInt();
+        
         ringRotate(arr, r, c, s, rotation);
-        // transpose(arr, r);
     }
 
 }
