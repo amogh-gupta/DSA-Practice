@@ -1,5 +1,4 @@
 // Question URL : https://nados.io/question/ring-rotate
-import java.io.*;
 import java.util.*;
 
 public class Rotate {

@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class RingRotateMohitSol {
@@ -22,6 +21,7 @@ public class RingRotateMohitSol {
 
         ringRotate(mat,shell,k);
         display(mat);
+        scn.close();
     }
 
     public static void ringRotate(int[][]mat,int shell, int k){
