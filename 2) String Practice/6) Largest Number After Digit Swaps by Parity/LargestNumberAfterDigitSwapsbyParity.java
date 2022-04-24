@@ -55,5 +55,6 @@ public class LargestNumberAfterDigitSwapsbyParity {
 		Scanner scn = new Scanner(System.in);
 		int num = scn.nextInt();
 		System.out.println(largestInteger(num));
+        scn.close();
 	}
 }
