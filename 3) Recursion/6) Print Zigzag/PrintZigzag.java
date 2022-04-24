@@ -5,10 +5,14 @@ import java.util.*;
 public class PrintZigzag {
 
     public static void main(String[] args) throws Exception {
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        pzz(n);
-        scn.close();
+        // Scanner scn = new Scanner(System.in);
+        // int n = scn.nextInt();
+        // pzz(n);
+        // scn.close();
+        // 
+        // OR
+        // 
+        pzz(new Scanner(System.in).nextInt);
     }
 
     public static void pzz(int n){
