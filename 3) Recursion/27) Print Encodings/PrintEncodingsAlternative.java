@@ -7,6 +7,7 @@ public class PrintEncodingsAlternative {
 
         String str = scn.nextLine();
         printEncodings(str, "");
+        scn.close();
     }
 
     public static void printEncodings(String qsf,String asf) {

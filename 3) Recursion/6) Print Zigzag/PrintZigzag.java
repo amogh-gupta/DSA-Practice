@@ -12,7 +12,7 @@ public class PrintZigzag {
         // 
         // OR
         // 
-        pzz(new Scanner(System.in).nextInt);
+        pzz(new Scanner(System.in).nextInt());
     }
 
     public static void pzz(int n){
