@@ -1,6 +1,6 @@
 // Question URL: https://leetcode.com/problems/sort-an-array/submissions/
 import java.util.Scanner;
-class Solution {
+class SelectionSort {
     public static int[] sortArray(int[] nums) {
         for(int i = 0; i<nums.length-1; i++){
             int minIdx = i;
