@@ -43,6 +43,30 @@ public class LinkedListOperations {
             this.size++;
         }
 
+        void addAt(int idx, int val){
+            
+            if (idx < 0 || idx > size) {
+                System.out.println("Invalid arguments");
+            }
+            else if(idx == 0){
+                addFirst(val);
+            }
+            else if(idx == this.size-1){
+                addLast(val);
+            }
+            else{
+                Node present = head, node = new Node();
+                node.data = val;
+
+                for(int i = 0; i < idx; i++){
+                    present = present.next;
+                }
+                node.next = present.next;
+                present.next = node;
+            }
+            this.size++;
+        }
+
         
 
         void displayLinkedList(){
@@ -59,6 +83,8 @@ public class LinkedListOperations {
         LinkedList l1 = new LinkedList();
         l1.addFirst(10);
         l1.addFirst(0);
+
+        l1.addAt(2, 20);
         
         l1.addLast(30);
         l1.addLast(40);
