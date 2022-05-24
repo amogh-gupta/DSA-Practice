@@ -145,6 +145,16 @@ public class LinkedListOperations {
             }
         }
 
+        public int getFirst() {
+            if (size == 0) {
+              System.out.println("List is empty");
+              return -1;
+            } 
+            else {
+              return head.data;
+            }
+        }
+      
         
 
         void displayLinkedList(){
@@ -174,6 +184,8 @@ public class LinkedListOperations {
         l1.removeFirst();
 
         l1.removeAt(2);
+
+        System.out.println(l1.getFirst());
         
         System.out.println("Size :- " + l1.size);
 
