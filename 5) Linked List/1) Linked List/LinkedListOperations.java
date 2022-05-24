@@ -55,10 +55,10 @@ public class LinkedListOperations {
                 addLast(val);
             }
             else{
-                Node present = head, node = new Node();
+                Node present = this.head, node = new Node();
                 node.data = val;
 
-                for(int i = 0; i < idx; i++){
+                for(int i = 0; i < idx-1; i++){
                     present = present.next;
                 }
                 node.next = present.next;
@@ -83,13 +83,13 @@ public class LinkedListOperations {
         LinkedList l1 = new LinkedList();
         l1.addFirst(10);
         l1.addFirst(0);
-
-        l1.addAt(2, 20);
         
         l1.addLast(30);
         l1.addLast(40);
         l1.addLast(50);
-
+        
+        l1.addAt(2, 20);
+        
         System.out.println("Size :- " + l1.size);
 
         l1.displayLinkedList();
