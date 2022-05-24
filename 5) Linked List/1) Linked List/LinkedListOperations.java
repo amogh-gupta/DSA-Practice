@@ -165,7 +165,23 @@ public class LinkedListOperations {
             }
         }
         
-        
+        public int getAt(int idx) {
+            if (size == 0) {
+                System.out.println("List is empty");
+                return -1;
+            } 
+            else if (idx < 0 || idx >= size) {
+                System.out.println("Invalid arguments");
+                return -1;
+            } 
+            else {
+                Node temp = head;
+                for (int i = 0; i < idx; i++) {
+                temp = temp.next;
+                }
+                return temp.data;
+            }
+        }
 
         void displayLinkedList(){
             Node node = this.head;
@@ -198,6 +214,8 @@ public class LinkedListOperations {
         System.out.println(l1.getFirst());
 
         System.out.println(l1.getLast());
+
+        System.out.println(l1.getAt(3));
         
         System.out.println("Size :- " + l1.size);
 
