@@ -28,6 +28,21 @@ public class LinkedListOperations {
             this.size++;
         }
 
+        void addFirst(int val){
+            Node node = new Node();
+            node.data = val;
+
+            if(this.size == 0){
+                this.head = node;
+                this.tail = node;
+            }
+            else{
+                node.next = this.head;
+                this.head = node;
+            }
+            this.size++;
+        }
+
         
 
         void displayLinkedList(){
@@ -42,6 +57,9 @@ public class LinkedListOperations {
     }
     public static void main(String[] args) {
         LinkedList l1 = new LinkedList();
+        l1.addFirst(10);
+        l1.addFirst(0);
+        
         l1.addLast(30);
         l1.addLast(40);
         l1.addLast(50);
