@@ -67,6 +67,27 @@ public class LinkedListOperations {
             this.size++;
         }
 
+        void removeLast(){
+            Node node = head;
+            if(this.size == 0){
+                System.out.println("List is empty");
+            }
+            if(this.size == 1){
+                System.out.println("Removed data is:- " + head.data);
+                this.head = null;
+                this.tail= null;
+                this.size--;    
+                return;
+            }
+            while(node.next != this.tail){
+                node = node.next;
+            }
+            System.out.println("Removed data is:- " + tail.data);
+            this.tail = node;
+            this.tail.next = null;
+            this.size--;
+        }
+
         
 
         void displayLinkedList(){
@@ -89,6 +110,8 @@ public class LinkedListOperations {
         l1.addLast(50);
         
         l1.addAt(2, 20);
+
+        l1.removeLast();
         
         System.out.println("Size :- " + l1.size);
 
