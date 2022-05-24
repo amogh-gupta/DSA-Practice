@@ -215,7 +215,7 @@ public class LinkedListOperations {
 
         System.out.println(l1.getLast());
 
-        System.out.println(l1.getAt(3));
+        System.out.println(l1.getAt(2));
         
         System.out.println("Size :- " + l1.size);
 
