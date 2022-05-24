@@ -88,6 +88,17 @@ public class LinkedListOperations {
             this.size--;
         }
 
+        void removeFirst(){
+            if(this.size == 0){
+                System.out.println("List is empty");
+            }
+            else{
+                System.out.println("Removed data is:- " + head.data);
+                this.head = this.head.next;
+            }   
+            this.size--;
+        }
+
         
 
         void displayLinkedList(){
@@ -112,6 +123,8 @@ public class LinkedListOperations {
         l1.addAt(2, 20);
 
         l1.removeLast();
+
+        l1.removeFirst();
         
         System.out.println("Size :- " + l1.size);
 
