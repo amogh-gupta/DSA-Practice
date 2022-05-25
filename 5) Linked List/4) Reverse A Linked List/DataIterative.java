@@ -1,4 +1,4 @@
-// Question URL : https://nados.io/content/linked-lists-for-beginners
+// Question URL : https://nados.io/question/reverse-a-linked-list-data-iterative
 public class DataIterative {
     public static class Node{
         int data;
