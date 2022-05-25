@@ -1,5 +1,5 @@
-// Question URL : https://nados.io/question/reverse-a-linked-list-data-iterative
-public class DataIterative {
+// Question URL : https://nados.io/question/reverse-linked-list-pointer-iterative
+public class PointerIterative {
     public static class Node{
         int data;
         Node next;
@@ -229,45 +229,17 @@ public class DataIterative {
 
         public void reversePI(){
             // write your code here
-            int li = 0;
-            int ri = size - 1;
-            while(li < ri){
-              Node left = getNodeAt(li-1);
-              Node right = getNodeAt(ri-1);
-      
-              Node tmp1, tmp2;
-              
-              if(left == null){
-                tmp1 = head;
-                tmp2 = right.next;
-                Node t =  tmp1.next;
-                tmp1.next = tmp2.next;
-                tmp2.next = t;
-                head = tmp2;
-                right.next = tmp1; 
-                // tmp2.next = left.next;
-                // right.next = left;
-                // left.next = null;
-              }
-              else{
-                tmp1 = left.next; 
-                tmp2 = right.next;
-                Node t =  tmp1.next;
-                tmp1.next = tmp2.next;
-                tmp2.next = t;
-                // tmp1.next = right.next.next;
-                // tmp2.next = left.next.next;
-                right.next = tmp1;
-                left.next = tmp2;
-              }
-              
-              li++;
-              ri--;
-              System.out.println("tmp1: "+tmp1.data+" tmp2: "+tmp2.data);
+            Node temp, pre = null, cur = head;
+            while(cur!=null){
+              temp = cur.next;
+              cur.next = pre;
+              pre = cur;
+              cur = temp;
             }
+            temp = head;
+            head = tail;
+            tail = temp;
           }
-
-
     }
     public static void main(String[] args) {
         LinkedList l1 = new LinkedList();
