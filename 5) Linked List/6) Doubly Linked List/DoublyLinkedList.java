@@ -1,5 +1,6 @@
 // Question URL : https://leetcode.com/problems/design-linked-list/submissions/
 public class DoublyLinkedList {
+    
     public static class Node{
         int data;
         Node next;
