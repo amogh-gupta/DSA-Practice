@@ -19,9 +19,9 @@ public class Solution {
                 cur = cur.next;
             }
             else{
-                present = cur;
+                present = cur;  // This line is Optional
                 cur = cur.next;
-                present.next = null;
+                present.next = null; // This line is Optional
             }
         }
         pre.next = null;
