@@ -1,15 +1,15 @@
 // QUESTION URL : - https://practice.geeksforgeeks.org/problems/find-length-of-loop/1
-class Node
-{
-    int data;
-    Node next;
-    Node(int d) {data = d; next = null; }
-}
 
 //Function should return the length of the loop in LL.
 
 class Solution2 {
-    //Function to find the length of a loop in the linked list.
+    class Node
+    {
+        int data;
+        Node next;
+        Node(int d) {data = d; next = null; }
+    }
+//Function to find the length of a loop in the linked list.
     static int countNodesinLoop(Node head)
     {
         //Add your code here.
