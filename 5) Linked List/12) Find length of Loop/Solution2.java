@@ -17,8 +17,8 @@ class Solution2 {
         if(head == null || head.next == null){
             return index;
         }
-        Node slow, fast, curr;
-        curr = slow = fast = head;
+        Node slow, fast;
+        slow = fast = head;
         boolean flag = false;
         while(fast != null && fast.next != null){
             slow = slow.next;
