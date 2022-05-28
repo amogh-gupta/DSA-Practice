@@ -33,6 +33,7 @@ class Solution2 {
         //     slow = slow.next;
         //     curr = curr.next;
         // }
+        
         while(true){
             slow = slow.next;
             index++;
