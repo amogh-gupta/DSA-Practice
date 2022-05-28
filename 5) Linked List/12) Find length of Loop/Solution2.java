@@ -1,3 +1,4 @@
+// QUESTION URL : - https://practice.geeksforgeeks.org/problems/find-length-of-loop/1
 class Node
 {
     int data;
@@ -33,7 +34,7 @@ class Solution2 {
         //     slow = slow.next;
         //     curr = curr.next;
         // }
-        
+
         while(true){
             slow = slow.next;
             index++;
