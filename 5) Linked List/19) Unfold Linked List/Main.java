@@ -72,5 +72,6 @@ class Main {
         ListNode head = dummy.next;
         unfold(head);
         printList(head);
+        scn.close();
     }
 }
