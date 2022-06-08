@@ -11,6 +11,6 @@ public class Main{
         Person p1 = new Person();
         p1.age = 23;
         p1.name = "Amogh";
-        p1.print();
+        p1.print(); // OUTPUT : - Amogh - 23
     }
 }
