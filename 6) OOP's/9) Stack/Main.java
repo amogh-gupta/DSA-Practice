@@ -2,20 +2,20 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        Stack<Integer> st = new Stack<>();
+        Queue<Integer> st = new ArrayDeque<>();
         
         System.out.println(st.size() + " : " + st);
         
-        st.push(10);
+        st.add(10);
         System.out.println(st.size() + " : " + st);
         
-        st.push(20);
+        st.add(20);
         System.out.println(st.size() + " : " + st);
         
-        st.push(30);
+        st.add(30);
         System.out.println(st.size() + " : " + st);
         
-        st.push(40);
+        st.add(40);
         
         for(int ele : st){
             System.out.print(ele + " -> ");
@@ -24,7 +24,7 @@ public class Main {
 
         System.out.println(st);
 
-        System.out.println(st.pop() + " : " + st);
+        System.out.println(st.remove() + " : " + st);
 
         System.out.println(st.peek() + " : " + st);
     }   
