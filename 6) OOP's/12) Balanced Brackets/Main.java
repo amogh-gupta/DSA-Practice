@@ -1,6 +1,5 @@
 // Question URL: - https://nados.io/question/balanced-brackets
 import java.util.*;
-
 public class Main{
 
    public static boolean checkBracket(String input){
